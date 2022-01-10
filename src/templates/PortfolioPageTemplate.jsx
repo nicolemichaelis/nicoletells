@@ -13,6 +13,9 @@ const StyledSection = styled(Section)`
 
 const StyledGatsbyImage = styled(GatsbyImage)`
   height: 100px;
+  isolation: isolate;
+  border-top-left-radius: var(--rounded-corners);
+  border-top-right-radius: var(--rounded-corners);
 `
 
 const ProjectsWrapper = styled.div`
@@ -27,17 +30,18 @@ const ProjectsWrapper = styled.div`
 `
 
 const ProjectWrapper = styled.div`
+  min-height: 200px;
   background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: stretch;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: stretch;
   border-radius: var(--rounded-corners);
   overflow: hidden;
-  height: 100%;
   box-shadow: var(--shadow-elevation-medium);
 
   & > h2 {
+    text-align: center;
     font-family: "Fraunces", "FrauncesVariable", serif;
     font-weight: 600;
     font-size: 18px;
@@ -56,6 +60,8 @@ const PortfolioProject = ({ title, description, portfolioPageImage}) => {
     <ProjectWrapper>
       <StyledGatsbyImage
         image={image}
+        style={{height:"100px"}}
+        imgStyle={{height:"100px"}}
         alt={title}
       />
       <h2>{title}</h2>
