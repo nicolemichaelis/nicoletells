@@ -1,0 +1,137 @@
+local_backend: true
+
+backend:
+  name: github
+  repo: nicolemichaelis/nicoletells
+  branch: main
+
+media_folder: "src/images"
+public_folder: "src/images"
+
+collections:
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/index.md"
+        label: "Landing Page"
+        name: "index"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page"
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subTitle", widget: "string" }
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - file: "src/pages/about/index.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page"
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "About Image", name: "aboutImage", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Title for Eiffel", name: "eiffelTitle", widget: "string" }
+          - { label: "Content for Eiffel", name: "eiffelContent", widget: "text" }
+          - { label: "Title for Document", name: "documentTitle", widget: "string" }
+          - { label: "Content for Document", name: "documentContent", widget: "text" }
+          - { label: "Title for Rocket", name: "rocketTitle", widget: "string" }
+          - { label: "Content for Rocket", name: "rocketContent", widget: "text" }
+
+      - file: "src/pages/portfolio/index.md"
+        label: "Portfolio"
+        name: "portfolio"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "portfolio-page"
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project"
+    folder: "src/pages/portfolio"
+    filter: { field: "templateKey", value: "project-page" }
+    create: true
+    slug: "index"
+    media_folder: "../../../images"
+    public_folder: "../../../images"
+    path: "{{title}}/index"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "project-page"
+        }
+      - { label: "Show on landing page", name: "showOnLandingPage", widget: "boolean" }
+      - { label: "Show on portfolio page", name: "showOnPortfolioPage", widget: "boolean" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Landing Page Image", name: "landingPageImage", widget: "image", required: false }
+      - { label: "Portfolio Page Image", name: "portfolioPageImage", widget: "image", required: false }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    label_singular: "Testimonial"
+    folder: "src/testimonials"
+    create: true
+    media_folder: "../images"
+    public_folder: "../images"
+    path: "{{name}}"
+    fields:
+      - { label: "Testimonial Image", name: "testimonialImage", widget: "image" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "skills"
+    label: "Skills"
+    label_singular: "Skill"
+    folder: "src/skills"
+    create: true
+    media_folder: "../images"
+    public_folder: "../images"
+    path: "{{title}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number" }
+      - { label: "Skill Image", name: "skillImage", widget: "image" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "marquee"
+    label: "Marquee"
+    folder: "src/marquee"
+    create: false
+    media_folder: "../images/marquee"
+    public_folder: "../images/marquee"
+    path: "{{title}}"
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "hidden",
+          default: "Marquee"
+        }
+      - label: "Marquee Images"
+        name: "marqueeImages"
+        widget: "list"
+        summary: "{{fields.image}}"
+        field: { label: "Marquee Image", name: "marqueeImage", widget: "image" }
