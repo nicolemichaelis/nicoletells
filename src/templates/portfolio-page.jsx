@@ -5,11 +5,11 @@ import PortfolioPageTemplate from "./PortfolioPageTemplate"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
-const PortfolioPage = ({ data }) => {
+const PortfolioPage = ({ data, location }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO
         title={post.frontmatter.title}
         description={post.excerpt}

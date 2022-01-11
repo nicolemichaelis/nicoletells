@@ -27,6 +27,10 @@ collections:
           - { label: "Subtitle", name: "subTitle", widget: "string" }
           - { label: "Hero Image", name: "heroImage", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "About Button", name: "aboutButton", widget: "string" }
+          - { label: "Portfolio Title", name: "portfolioTitle", widget: "string" }
+          - { label: "Portfolio Button", name: "portfolioButton", widget: "string" }
+          - { label: "Testimonials Title", name: "testimonialsTitle", widget: "string" }
 
       - file: "src/pages/about/index.md"
         label: "About"

@@ -1,8 +1,8 @@
 import React from "react"
-
+import { navigate } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from "styled-components"
-import { Section, Flex } from "../../styles"
+import { Section, Flex, CTAButton } from "../../styles"
 
 import HtmlContent from "../HtmlContent"
 
@@ -63,7 +63,7 @@ const StyledSvg = styled.svg`
   animation: rotate 60s linear infinite;
 `
 
-const Hero = ({ title, subTitle, hero, heroImage }) => {
+const Hero = ({ title, subTitle, hero, heroImage, aboutButton }) => {
   const image = getImage(heroImage)
 
   return (
@@ -93,7 +93,15 @@ const Hero = ({ title, subTitle, hero, heroImage }) => {
         <StyledContent
           content={hero}
         />
+
       </FlexRow>
+
+      <CTAButton
+        onClick={() => navigate("/about/")}
+      >
+        {aboutButton}
+      </CTAButton>
+
     </StyledSection>
   )
 }

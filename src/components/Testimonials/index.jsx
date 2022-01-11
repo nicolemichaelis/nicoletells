@@ -19,7 +19,7 @@ const StyledSwiper = styled(Swiper)`
   width: 100%;
 `
 
-const Testimonials = () => {
+const Testimonials = ({ testimonialsTitle }) => {
 const data = useStaticQuery(graphql`
   query OnlyTestimonials {
       allMarkdownRemark(filter: {fileAbsolutePath:{regex:"/testimonials/"}}) {
@@ -44,7 +44,7 @@ const data = useStaticQuery(graphql`
 
   return (
     <StyledSection>
-      <h1>This is what my clients say</h1>
+      <h1>{testimonialsTitle}</h1>
       <StyledSwiper
         navigation={true}
         pagination={true}

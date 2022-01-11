@@ -37,7 +37,10 @@ const TitleTag = styled.p`
 `
 
 const StyledHtmlContent = styled(HtmlContent)`
-
+  & > p {
+    margin: 0;
+    padding: 0;
+  }
 `
 
 const Testimonial = ({ name, title, image, content }) => {

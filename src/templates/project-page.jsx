@@ -5,10 +5,10 @@ import ProjectPageTemplate from "./ProjectPageTemplate"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
-const ProjectPage = ({ data }) => {
+const ProjectPage = ({ data, location }) => {
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO
         title={data.markdownRemark.frontmatter.title}
         description={data.markdownRemark.excerpt}

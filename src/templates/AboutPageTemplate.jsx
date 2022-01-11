@@ -50,6 +50,10 @@ const StyledHtmlContent = styled(HtmlContent)`
     margin: 0;
   }
 
+  @media (min-width: 1200px) {
+    width: 60vw;
+  }
+
   & > p:not(:first-of-type) {
     margin-top: var(--margin-p);
   }
@@ -75,10 +79,6 @@ const IconWrapper = styled.div`
   }
 
   & > div > h2 {
-    font-family: "Fraunces", "FrauncesVariable", serif;
-    font-weight: 600;
-    font-size: 18px;
-    text-align: center;
     line-height: 1;
     margin: 5px 0;
   }
@@ -101,7 +101,7 @@ const AboutPageTemplate = ({ title, aboutImage, content, eiffelTitle, eiffelCont
           image={image}
           alt={title}
         />
-      <StyledHtmlContent content={content} />
+        <StyledHtmlContent content={content} />
         <IconWrapper>
           <div>
             <AboutEiffel />

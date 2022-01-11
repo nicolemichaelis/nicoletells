@@ -53,26 +53,18 @@ const StyledSvg = styled.svg`
   }
 `
 
-const H2 = styled.h2`
-  text-align: center;
-  font-family: "Fraunces", "FrauncesVariable", serif;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: var(--h2-bottom-margin);
-`
-
 const StyledContent = styled(HtmlContent)`
 
 
   & ul {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     list-style: none;
     padding-inline-start: 0;
-    justify-items: center;
-    align-items: flex-start;
+    justify-items: stretch;
+    align-items: stretch;
   }
 
   & ul li {
@@ -119,7 +111,7 @@ const Skill = ({ i, title, content, skillImage }) => {
       </ImageWrapper>
 
       <SkillDiv>
-        <H2>{title}</H2>
+        <h2>{title}</h2>
         <StyledContent content={content}/>
       </SkillDiv>
     </FlexRow>

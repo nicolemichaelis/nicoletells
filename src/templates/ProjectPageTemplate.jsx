@@ -16,11 +16,8 @@ const StyledHtmlContent = styled(HtmlContent)`
     margin: 0;
   }
 
-  & > h2 {
-    font-family: "Fraunces", "FrauncesVariable", serif;
-    font-weight: 600;
-    font-size: 18px;
-    margin-bottom: var(--h2-bottom-margin);
+  @media (min-width: 1200px) {
+    width: 60vw;
   }
 
   & > h2:not(:first-child) {
@@ -53,25 +50,19 @@ const StyledHtmlContent = styled(HtmlContent)`
     text-decoration: none;
     color: black;
     position: relative;
-
-    &::before {
-      z-index: -1;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      content: "";
-      width: 100%;
-      height: 1px;
-      background: linear-gradient(45deg, var(--amethyst), var(--iolite));
-      transition: height 100ms, opacity 100ms;
-    }
+    background-image: linear-gradient(45deg, hsl(287deg 76% 50% / 1), hsl(253deg 100% 61% / 1));
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% 5%;
+    transition: background-size 100ms;
 
     @media (hover) {
-      &:hover::before {
-        opacity: .2;
-        height: 100%;
+      &:hover {
+        background-size: 100% 100%;
+        background-image: linear-gradient(45deg, hsl(287deg 76% 50% / .2), hsl(253deg 100% 61% / .2));
       }
     }
+
   }
 `
 

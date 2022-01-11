@@ -5,11 +5,11 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import AboutPageTemplate from "./AboutPageTemplate"
 
-const AboutPage = ({ data }) => {
+const AboutPage = ({ data, location }) => {
   const markdownRemark = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO
         title={data.markdownRemark.frontmatter.title}
         description={data.markdownRemark.excerpt}

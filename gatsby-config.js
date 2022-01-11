@@ -17,7 +17,7 @@ module.exports = {
         short_name: "Nicole Alexandra Michaelis",
         start_url: "/",
         background_color: "#ffffff",
-        theme_color: "#B620E0",
+        theme_color: "#ffffff",
         icon: `${__dirname}/src/images/icon.png`,
       },
     },
@@ -81,7 +81,8 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 2048
+              maxWidth: 2048,
+              linkImagesToOriginal: false,
             }
           }
         ]

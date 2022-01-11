@@ -7,6 +7,7 @@ import { ModalContext } from "../Layout"
 const Wrapper = styled.div`
   text-align: center;
   padding: 20px 0 40px;
+  margin: 0 10px;
 `
 
 const StyledGatsbyImage = styled(GatsbyImage)`

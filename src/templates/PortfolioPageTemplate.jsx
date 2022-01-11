@@ -41,10 +41,6 @@ const ProjectWrapper = styled.div`
   box-shadow: var(--shadow-elevation-medium);
 
   & > h2 {
-    text-align: center;
-    font-family: "Fraunces", "FrauncesVariable", serif;
-    font-weight: 600;
-    font-size: 18px;
     margin: 0 10px
   }
 
@@ -72,6 +68,10 @@ const PortfolioProject = ({ title, description, portfolioPageImage}) => {
 
 const StyledHtmlContent = styled(HtmlContent)`
   margin-bottom: 20px;
+
+  @media (min-width: 1200px) {
+    width: 60vw;
+  }
 `
 
 const PortfolioPageTemplate = ({ title, body, projects }) => {

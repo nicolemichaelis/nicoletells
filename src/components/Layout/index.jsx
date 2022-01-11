@@ -10,10 +10,12 @@ import Footer from "../Footer"
 
 export const ModalContext = createContext()
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const [modal, setModal] = useState(false)
   const [cards, setCards] = useState([])
   const [activeIndex, setActiveIndex] = useState(0)
+
+  console.log("location: ", location)
 
   useEffect(() => {
     if (typeof window !== undefined) {
@@ -53,7 +55,7 @@ const Layout = ({ children }) => {
       </Transition>
 
       <GlobalStyle />
-      <Nav />
+      {location.pathname !== "/" && <Nav />}
         {children}
       <Footer />
     </ModalContext.Provider>

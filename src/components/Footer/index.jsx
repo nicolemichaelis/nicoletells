@@ -120,7 +120,7 @@ const Footer = () => {
         <a href="https://www.amazon.co.uk/Nobody-Cares-But-You-growing/dp/1948333120/ref=sr_1_1?keywords=nobody+cares+but+you+michaelis&qid=1577524409&sr=8-1" target="_blank" rel="noreferrer">
           <SubTitleP>Buy my book</SubTitleP>
           <Promo>Nobody Cares But You</Promo>
-          <SubTitleP>at Amazon</SubTitleP>
+          <SubTitleP>on Amazon</SubTitleP>
         </a>
         <a href="https://open.spotify.com/show/68tt1i43PKfXqJ3SVL6Gjf?si=741c29885b6e4d11" target="_blank" rel="noreferrer">
           <SubTitleP>Listen to</SubTitleP>

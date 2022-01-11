@@ -3,6 +3,10 @@ templateKey: index-page
 title: Nicole Alexandra Michaelis
 subTitle: Poet - UX Writer - Content Strategist
 heroImage: ../images/nico.webp
+aboutButton: Get to know me better
+portfolioTitle: This is what I've done
+portfolioButton: Explore more of my work
+testimonialsTitle: This is what my clients say
 ---
 I create compelling UX copy and content that converts based on experience, observation, and data.
 

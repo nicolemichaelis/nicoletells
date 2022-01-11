@@ -2,7 +2,7 @@ import React from "react"
 
 import Hero from "../components/Hero"
 
-const IndexPageTemplate = ({ title, subTitle, hero, heroImage }) => {
+const IndexPageTemplate = ({ title, subTitle, hero, heroImage, aboutButton }) => {
 
   return (
     <>
@@ -11,6 +11,7 @@ const IndexPageTemplate = ({ title, subTitle, hero, heroImage }) => {
         subTitle={subTitle}
         heroImage={heroImage}
         hero={hero}
+        aboutButton={aboutButton}
       />
     </>
   )

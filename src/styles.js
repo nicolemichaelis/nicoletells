@@ -82,7 +82,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: "Karla", "KarlaVariable", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     width: 100vw;
@@ -118,8 +118,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    font-size: 16px;
-    font-weight: 400;
+    text-align: center;
+    font-family: "Fraunces", "FrauncesVariable", serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: var(--h2-bottom-margin);
   }
 
   #root, #___gatsby {
@@ -146,10 +149,39 @@ export const Section = styled.section`
   padding: var(--padding-default);
   display: flex;
   align-items: center;
+
+  @media (min-width: 1200px) {
+    padding: var(--padding-default) 10vw;
+  }
 `
 
 export const Flex = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
+`
+
+export const CTAButton = styled.button`
+  cursor: pointer;
+  color: black;
+  font-family: "Fraunces", "FrauncesVariable", serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 9999px;
+  padding: 5px 15px;
+  background: var(--citrine);
+  filter: hue-rotate(-20deg);
+  margin-bottom: 20px;
+
+  @media (hover) {
+    &:hover {
+      background: var(--amber);
+      filter: hue-rotate(0deg);
+    }
+  }
+
+  &:active {
+    background: var(--amber);
+    filter: hue-rotate(0deg);
+  }
 `

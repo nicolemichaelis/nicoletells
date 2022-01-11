@@ -10,11 +10,11 @@ import Marquee from "../components/Marquee"
 import Testimonials from "../components/Testimonials"
 import Skills from "../components/Skills"
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, location }) => {
   const markdownRemark = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO
         title="Nicole Alexandra Michaelis"
         description="Personal website of Nichole Alexandra Michaelis - Poet, Senior UX Writer, and Content Strategist."
@@ -24,11 +24,17 @@ const IndexPage = ({ data }) => {
         subTitle={markdownRemark.frontmatter.subTitle}
         hero={markdownRemark.html}
         heroImage={markdownRemark.frontmatter.heroImage}
+        aboutButton={markdownRemark.frontmatter.aboutButton}
       />
-      <FeaturedProjects />
+      <FeaturedProjects
+        portfolioTitle={markdownRemark.frontmatter.portfolioTitle}
+        portfolioButton={markdownRemark.frontmatter.portfolioButton}
+      />
       <Skills />
       <Marquee />
-      <Testimonials />
+      <Testimonials
+        testimonialsTitle={markdownRemark.frontmatter.testimonialsTitle}
+      />
     </Layout>
   )
 }
@@ -42,6 +48,10 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subTitle
+        aboutButton
+        portfolioTitle
+        portfolioButton
+        testimonialsTitle
         heroImage {
           childImageSharp {
             gatsbyImageData
