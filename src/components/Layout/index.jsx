@@ -15,8 +15,6 @@ const Layout = ({ children, location }) => {
   const [cards, setCards] = useState([])
   const [activeIndex, setActiveIndex] = useState(0)
 
-  console.log("location: ", location)
-
   useEffect(() => {
     if (typeof window !== undefined) {
       if (modal) {

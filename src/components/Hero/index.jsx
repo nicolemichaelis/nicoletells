@@ -74,6 +74,7 @@ const Hero = ({ title, subTitle, hero, heroImage, aboutButton }) => {
 
         <ImageWrapper>
           <StyledGatsbyImage
+            loading="eager"
             image={image}
             alt={title}
           />
@@ -97,7 +98,7 @@ const Hero = ({ title, subTitle, hero, heroImage, aboutButton }) => {
       </FlexRow>
 
       <CTAButton
-        onClick={() => navigate("/about/")}
+        onClick={() => navigate("/about")}
       >
         {aboutButton}
       </CTAButton>
