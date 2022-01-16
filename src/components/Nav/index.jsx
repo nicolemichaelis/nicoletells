@@ -40,6 +40,7 @@ const Nav = () => {
       <div>
         <Link to="/about" activeClassName="active">About</Link>
         <Link to="/portfolio" activeClassName="active">Portfolio</Link>
+        <Link to="/talks" activeClassName="active">Talks</Link>
       </div>
     </StyledNav>
   )

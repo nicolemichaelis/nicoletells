@@ -65,6 +65,27 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
+      - file: "src/pages/talks/index.md"
+        label: "Talks"
+        name: "talks"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "talks-page"
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - label: "Timeline"
+            name: "timeline"
+            widget: "list"
+            summary: "{{fields.timelineTitle}}"
+            fields:
+              - { label: "Timeline Title", name: "timelineTitle", widget: "string" }
+              - { label: "Timeline Date", name: "timelineDate", widget: "date"}
+              - { label: "Timeline Type", name: "timelineType", widget: "select", options: ["Talk", "Workshop", "None"] }
+              - { label: "Timeline Body", name: "timelineBody", widget: "text" }
 
   - name: "projects"
     label: "Projects"
@@ -137,5 +158,4 @@ collections:
       - label: "Marquee Images"
         name: "marqueeImages"
         widget: "list"
-        summary: "{{fields.image}}"
         field: { label: "Marquee Image", name: "marqueeImage", widget: "image" }

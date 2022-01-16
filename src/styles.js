@@ -33,6 +33,9 @@ export const GlobalStyle = createGlobalStyle`
     --amethyst: #B620E0;
     --iolite: #6236FF;
 
+    --timeline-talk: var(--amethyst);
+    --timeline-workshop: var(--amazonite);
+
     --swiper-theme-color: #000000 !important;
 
     --padding-default: 10px;
