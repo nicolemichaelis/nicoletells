@@ -80,7 +80,7 @@ const FeaturedProjects = ({ portfolioTitle, portfolioButton }) => {
           ))}
         </ProjectWrapper>
         <CTAButton
-          onClick={() => navigate("/portfolio")}
+          onClick={() => navigate("/portfolio/")}
         >
           {portfolioButton}
         </CTAButton>

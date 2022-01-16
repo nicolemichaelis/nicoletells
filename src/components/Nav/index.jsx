@@ -38,9 +38,9 @@ const Nav = () => {
     <StyledNav>
       <Link to="/">Nicole<br/>Alexandra<br/>Michaelis</Link>
       <div>
-        <Link to="/about" activeClassName="active">About</Link>
-        <Link to="/portfolio" activeClassName="active">Portfolio</Link>
-        <Link to="/talks" activeClassName="active">Talks</Link>
+        <Link to="/about/" activeClassName="active">About</Link>
+        <Link to="/portfolio/" activeClassName="active">Portfolio</Link>
+        <Link to="/talks/" activeClassName="active">Talks</Link>
       </div>
     </StyledNav>
   )

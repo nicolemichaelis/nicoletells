@@ -27,14 +27,28 @@ const StyledHtmlContent = styled(HtmlContent)`
 
 const ObjectWrapper = styled.div`
   display: flex;
+  margin-bottom: -15px;
 
   & h2 {
     text-align: left;
     margin-bottom: 0;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -50px;
+      width: 30px;
+      transform: translate3d(0, -50%, 0);
+      height: 2px;
+      background: black;
+    }
   }
 
   & > div {
     padding-left: 50px;
+    padding-right: 0px;
   }
 
   &:nth-of-type(even) {
@@ -43,9 +57,15 @@ const ObjectWrapper = styled.div`
 
     & h2 {
       text-align: right;
+
+      &:after {
+        left: unset;
+        right: -50px;
+      }
     }
 
     & > div {
+      padding-left: 0px;
       padding-right: 50px;
     }
   }
