@@ -146,9 +146,6 @@ const TimelineEndBall = styled.div`
 
 const TalksPageTemplate = ({ title, content, timeline }) => {
 
-  // ${({t}) => t.map((t) => t === "talk")}
-  console.log(timeline.map((t) => t.timelineType === "Talk" ? "var(--iolite)" : (t.timelineType === "Workshop" ? "var(--emerald)" : "var(--ruby)")).join(", "))
-
   timeline.sort((a, b) => {
     const c = new Date(b.timelineDate)
     const d = new Date(a.timelineDate)

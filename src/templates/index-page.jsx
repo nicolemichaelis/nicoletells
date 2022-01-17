@@ -29,6 +29,7 @@ const IndexPage = ({ data, location }) => {
       <FeaturedProjects
         portfolioTitle={markdownRemark.frontmatter.portfolioTitle}
         portfolioButton={markdownRemark.frontmatter.portfolioButton}
+        talksButton={markdownRemark.frontmatter.talksButton}
       />
       <Skills />
       <Marquee />
@@ -51,6 +52,7 @@ export const pageQuery = graphql`
         aboutButton
         portfolioTitle
         portfolioButton
+        talksButton
         testimonialsTitle
         heroImage {
           childImageSharp {

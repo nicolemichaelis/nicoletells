@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react"
-import { useStaticQuery, graphql, navigate } from "gatsby"
+import { useStaticQuery, graphql, navigate, Link } from "gatsby"
 
 import styled from "styled-components"
 import { Section, Flex, CTAButton } from "../../styles"
@@ -12,9 +12,26 @@ import FeaturedProject from "../FeaturedProject"
 const FlexColumn = styled(Flex)`
   flex-direction: column;
 
-  & > h1,
-  & > button {
+  & > h1 {
     margin: 50px 0;
+  }
+
+  & > button {
+    margin: 50px 0 10px 0;
+  }
+
+  & > a {
+    color: black;
+    text-decoration: underline;
+    margin: 10px 0 50px 0;
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    &:active {
+      font-weight: 700;
+    }
   }
 `
 
@@ -33,7 +50,7 @@ const ProjectWrapper = styled.div`
   // }
 `
 
-const FeaturedProjects = ({ portfolioTitle, portfolioButton }) => {
+const FeaturedProjects = ({ portfolioTitle, portfolioButton, talksButton }) => {
   const data = useStaticQuery(graphql`
     query LandingPageProjects {
       allMarkdownRemark(
@@ -84,6 +101,9 @@ const FeaturedProjects = ({ portfolioTitle, portfolioButton }) => {
         >
           {portfolioButton}
         </CTAButton>
+        <Link to="/talks/">
+          {talksButton}
+        </Link>
       </FlexColumn>
     </Section>
   )

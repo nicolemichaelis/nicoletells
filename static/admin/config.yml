@@ -30,6 +30,7 @@ collections:
           - { label: "About Button", name: "aboutButton", widget: "string" }
           - { label: "Portfolio Title", name: "portfolioTitle", widget: "string" }
           - { label: "Portfolio Button", name: "portfolioButton", widget: "string" }
+          - { label: "Talks Button", name: "talksButton", widget: "string" }
           - { label: "Testimonials Title", name: "testimonialsTitle", widget: "string" }
 
       - file: "src/pages/about/index.md"

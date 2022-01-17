@@ -6,6 +6,7 @@ heroImage: ../images/nico.webp
 aboutButton: Get to know me better
 portfolioTitle: This is what I've done
 portfolioButton: Explore more of my work
+talksButton: View talks and workshops
 testimonialsTitle: This is what my clients say
 ---
 I create compelling UX copy and content that converts based on experience, observation, and data.
