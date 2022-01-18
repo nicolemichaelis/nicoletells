@@ -5,7 +5,7 @@ timeline:
   - timelineDate: 2019-06-01T12:18:08.752Z
     timelineTitle: Spotify Design (internal)
     timelineBody: How to develop inclusive product narratives
-    timelineType: Talk
+    timelineType: Workshop
   - timelineDate: 2020-10-01T12:20:26.444Z
     timelineTitle: UX Writer Conference
     timelineType: Talk
