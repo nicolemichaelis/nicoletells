@@ -1,6 +1,6 @@
 ---
 templateKey: talks-page
-title: Talks and Conferences
+title: Public speaking engagements
 timeline:
   - timelineDate: 2019-06-01T12:18:08.752Z
     timelineTitle: Spotify Design (internal)
@@ -48,4 +48,4 @@ timeline:
     timelineType: Talk
     timelineBody: Content design for design systems
 ---
-I love giving talks and workshops! I've trained in facilitation and workshop design at Hyper Island. This is a selection of talks and workshops I’ve given. Please contact me for a full list and more details on specific sessions.
+I love giving talks and workshops! I've trained in facilitation and workshop design at Hyper Island. This is a selection of talks and workshops I’ve given. Contact me for a full list and more details on specific sessions.
