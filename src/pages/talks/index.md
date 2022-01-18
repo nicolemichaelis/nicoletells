@@ -4,7 +4,7 @@ title: Talks and Conferences
 timeline:
   - timelineDate: 2019-06-01T12:18:08.752Z
     timelineTitle: Spotify Design (internal)
-    timelineBody: How to Develop inclusive product narratives
+    timelineBody: How to develop inclusive product narratives
     timelineType: Talk
   - timelineDate: 2020-10-01T12:20:26.444Z
     timelineTitle: UX Writer Conference
@@ -13,15 +13,16 @@ timeline:
   - timelineDate: 2021-10-01T12:35:08.752Z
     timelineTitle: Futurice Agency
     timelineType: Workshop
-    timelineBody: Introduction to UX Writing for Designers
+    timelineBody: Introduction to UX writing for designers
   - timelineDate: 2021-03-01T12:18:08.752Z
     timelineTitle: Hyper Island
     timelineType: Talk
-    timelineBody: Introduction to brand storytelling and product writing for Digital Media Creative students
+    timelineBody: Introduction to brand storytelling and product writing for Digital
+      Media Creative students
   - timelineDate: 2021-05-01T12:18:08.752Z
     timelineTitle: Stendahls Agency
     timelineType: Workshop
-    timelineBody: Introduction to UX Writing for Designers
+    timelineBody: Introduction to UX writing for designers
   - timelineDate: 2021-09-01T12:18:08.752Z
     timelineTitle: Bergs School of Communication
     timelineType: None
@@ -29,11 +30,11 @@ timeline:
   - timelineDate: 2021-09-01T12:28:08.752Z
     timelineTitle: Hyper Island
     timelineType: Talk
-    timelineBody: Storytelling and Content Design for Design Lead students
+    timelineBody: Storytelling and content cesign for design lead students
   - timelineDate: 2021-11-01T12:18:08.752Z
     timelineTitle: Content Ed Conference
     timelineType: Talk
-    timelineBody: Content Marketing best practices
+    timelineBody: Nailing your first 90 days on a new content job
   - timelineDate: 2021-12-01T12:18:08.752Z
     timelineTitle: FIS Global
     timelineType: Talk
@@ -41,8 +42,10 @@ timeline:
   - timelineDate: 2021-12-01T12:28:08.752Z
     timelineTitle: Technigo Bootcamp
     timelineType: Talk
-    timelineBody: What is UX Writing and UX Design for Developers
+    timelineBody: What is UX writing and UX design for developers
+  - timelineDate: 2022-01-18T08:06:02.558Z
+    timelineTitle: Content Strategy Insights Podcast
+    timelineType: Talk
+    timelineBody: Content design for design systems
 ---
-This is a selection of talks and workshops I’ve given. Please contact me for a full list and more details on specific sessions.
-
-I also host the Content Rookie podcast and teach the Content Marketing course at Berghs School of Communication.  I regularly am a guest on industry podcasts as well, such as X and Y.
+I love giving talks and workshops! I've trained in facilitation and workshop design at Hyper Island. This is a selection of talks and workshops I’ve given. Please contact me for a full list and more details on specific sessions.
