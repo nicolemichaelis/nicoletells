@@ -49,7 +49,7 @@ const ModalCard = styled.div`
   overflow-y: auto;
 
   opacity: ${({$state}) => $state === "entered" ? 1 : 0};
-  transform: translate3d(-50%, ${({$state}) => $state === "entered" ? "-50%" : "200px"}, 0);
+  transform: translate3d(-50%, ${({$state}) => $state === "entered" ? "-50%" : "calc(-1 * 50% + 50px)"}, 0);
   transition: opacity 300ms, transform 300ms;
 
   @media (max-width: 481px) {

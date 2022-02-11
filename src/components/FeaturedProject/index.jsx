@@ -6,8 +6,8 @@ import { ModalContext } from "../Layout"
 
 const Wrapper = styled.div`
   text-align: center;
-  padding: 20px 0 40px;
-  margin: 0 10px;
+  // padding: 20px 0 40px;
+  margin: 20px 10px 40px;
 `
 
 const StyledGatsbyImage = styled(GatsbyImage)`
@@ -23,14 +23,15 @@ const FeaturedProject = ({ title, landingPageImage, i }) => {
   const modal = useContext(ModalContext)
 
   return (
-    <Wrapper>
+    <Wrapper
+      onClick={() => {
+        modal.setActiveIndex(i)
+        modal.toggleModal()
+      }}
+    >
       <StyledGatsbyImage
         image={image}
         alt={title}
-        onClick={() => {
-          modal.setActiveIndex(i)
-          modal.toggleModal()
-        }}
       />
     </Wrapper>
   )
