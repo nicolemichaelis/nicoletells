@@ -47,5 +47,13 @@ timeline:
     timelineTitle: Content Strategy Insights Podcast
     timelineType: Talk
     timelineBody: Content design for design systems
+  - timelineDate: 2022-03-09T15:14:45.529Z
+    timelineTitle: Hyper Island
+    timelineType: Workshop
+    timelineBody: Creating authentic product narratives
+  - timelineDate: 2022-03-29T14:16:00.709Z
+    timelineTitle: Perspectives Conference
+    timelineType: Talk
+    timelineBody: Freelancing in content design
 ---
 I love giving talks and workshops! I've trained in facilitation and workshop design at Hyper Island. This is a selection of talks and workshops I’ve given. Contact me for a full list and more details on specific sessions.
