@@ -5,6 +5,7 @@ import { Flex } from "../../styles"
 import IconInstagram from "../../svgs/IconInstagram"
 import IconLinkedin from "../../svgs/IconLinkedin"
 import IconTwitter from "../../svgs/IconTwitter"
+import IconMedium from "../../svgs/IconMedium"
 
 const StyledFooter = styled.footer`
   background: linear-gradient(90deg, #555, #000), linear-gradient(0deg, var(--iolite), var(--amethyst));
@@ -134,14 +135,17 @@ const Footer = () => {
         </a>
       </PromosWrapper>
       <SocialsWrapper>
-        <a href="https://www.instagram.com/nicoletells" target="_blank" rel="noreferrer" aria-label="Instagram @nicoletells">
+        <a href="https://www.instagram.com/nicoletells" target="_blank" rel="noopener noreferrer" aria-label="Instagram @nicoletells">
           <IconInstagram />
         </a>
-        <a href="https://twitter.com/nicoletellsit" target="_blank" rel="noreferrer" aria-label="Twitter @nicoletellsit">
+        <a href="https://twitter.com/nicoletellsit" target="_blank" rel="noopener noreferrer" aria-label="Twitter @nicoletellsit">
           <IconTwitter />
         </a>
-        <a href="https://www.linkedin.com/in/nicoletells" target="_blank" rel="noreferrer" aria-label="LinkedIn @nicoletells">
+        <a href="https://www.linkedin.com/in/nicoletells" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn @nicoletells">
           <IconLinkedin />
+        </a>
+        <a href="https://medium.com/@nicoletells" target="_blank" rel="noopener noreferrer" aria-label="Medium @nicoletells">
+          <IconMedium />
         </a>
       </SocialsWrapper>
       <CopyContactInfoWrapper>
