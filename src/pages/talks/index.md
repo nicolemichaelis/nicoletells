@@ -55,5 +55,9 @@ timeline:
     timelineTitle: Perspectives Conference
     timelineType: Talk
     timelineBody: Freelancing in content design
+  - timelineDate: 2022-10-24T06:26:49.476Z
+    timelineTitle: Technigo UX Week
+    timelineType: Talk
+    timelineBody: A day in the life of a UXer
 ---
 I love giving talks and workshops! I've trained in facilitation and workshop design at Hyper Island. This is a selection of talks and workshops I’ve given. Contact me for a full list and more details on specific sessions.
