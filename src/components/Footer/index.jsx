@@ -1,14 +1,15 @@
-import React from "react"
-import styled from "styled-components"
-import { Flex } from "../../styles"
+import React from "react";
+import styled from "styled-components";
+import { Flex } from "../../styles";
 
-import IconInstagram from "../../svgs/IconInstagram"
-import IconLinkedin from "../../svgs/IconLinkedin"
-import IconTwitter from "../../svgs/IconTwitter"
-import IconMedium from "../../svgs/IconMedium"
+import IconInstagram from "../../svgs/IconInstagram";
+import IconLinkedin from "../../svgs/IconLinkedin";
+import IconTwitter from "../../svgs/IconTwitter";
+import IconMedium from "../../svgs/IconMedium";
 
 const StyledFooter = styled.footer`
-  background: linear-gradient(90deg, #555, #000), linear-gradient(0deg, var(--iolite), var(--amethyst));
+  background: linear-gradient(90deg, #555, #000),
+    linear-gradient(0deg, var(--iolite), var(--amethyst));
   background-blend-mode: difference;
   min-height: 35vh;
   padding: var(--padding-default);
@@ -17,7 +18,7 @@ const StyledFooter = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-`
+`;
 
 const CopyContactInfoWrapper = styled.div`
   width: 100%;
@@ -36,7 +37,7 @@ const CopyContactInfoWrapper = styled.div`
   & a:hover {
     color: var(--citrine);
   }
-`
+`;
 
 const InvisiA = styled.a`
   cursor: default;
@@ -46,14 +47,14 @@ const InvisiA = styled.a`
   &:hover {
     color: white !important;
   }
-`
+`;
 
 const SubTitleP = styled.p`
   line-height: 1;
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 1px;
-`
+`;
 
 const SocialsWrapper = styled(Flex)`
   justify-content: center;
@@ -76,7 +77,7 @@ const SocialsWrapper = styled(Flex)`
       fill: var(--citrine);
     }
   }
-`
+`;
 
 const PromosWrapper = styled(Flex)`
   justify-content: space-around;
@@ -96,7 +97,7 @@ const PromosWrapper = styled(Flex)`
   & a:hover {
     color: var(--citrine);
   }
-`
+`;
 
 const Promo = styled.p`
   font-family: "Fraunces", "FrauncesVariable", serif;
@@ -104,47 +105,70 @@ const Promo = styled.p`
   font-size: 18px;
   line-height: 1;
   margin: 2px 0;
-`
+`;
 
 const FlexColumn = styled(Flex)`
   width: 200px;
   margin: 10px 0;
   flex-direction: column;
-`
+`;
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <StyledFooter>
       <PromosWrapper>
-        <a href="https://www.amazon.co.uk/Nobody-Cares-But-You-growing/dp/1948333120/ref=sr_1_1?keywords=nobody+cares+but+you+michaelis&qid=1577524409&sr=8-1" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.amazon.co.uk/Nobody-Cares-But-You-growing/dp/1948333120/ref=sr_1_1?keywords=nobody+cares+but+you+michaelis&qid=1577524409&sr=8-1"
+          target="_blank"
+          rel="noreferrer"
+        >
           <SubTitleP>Buy my book</SubTitleP>
           <Promo>Nobody Cares But You</Promo>
           <SubTitleP>on Amazon</SubTitleP>
         </a>
-        <a href="https://open.spotify.com/show/68tt1i43PKfXqJ3SVL6Gjf?si=741c29885b6e4d11" target="_blank" rel="noreferrer">
+        <a
+          href="https://open.spotify.com/show/68tt1i43PKfXqJ3SVL6Gjf?si=741c29885b6e4d11"
+          target="_blank"
+          rel="noreferrer"
+        >
           <SubTitleP>Listen to</SubTitleP>
           <Promo>Content Rookie Podcast</Promo>
           <SubTitleP>on Spotify</SubTitleP>
         </a>
-        <a href="https://www.berghs.se/en/course/content-marketing/" target="_blank" rel="noreferrer">
-          <SubTitleP>Check out my</SubTitleP>
-          <Promo>Content Marketing Course</Promo>
-          <SubTitleP>at Berghs School of Communication</SubTitleP>
-        </a>
       </PromosWrapper>
       <SocialsWrapper>
-        <a href="https://www.instagram.com/nicoletells" target="_blank" rel="noopener noreferrer" aria-label="Instagram @nicoletells">
+        <a
+          href="https://www.instagram.com/nicoletells"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram @nicoletells"
+        >
           <IconInstagram />
         </a>
-        <a href="https://twitter.com/nicoletellsit" target="_blank" rel="noopener noreferrer" aria-label="Twitter @nicoletellsit">
+        <a
+          href="https://twitter.com/nicoletellsit"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter @nicoletellsit"
+        >
           <IconTwitter />
         </a>
-        <a href="https://www.linkedin.com/in/nicoletells" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn @nicoletells">
+        <a
+          href="https://www.linkedin.com/in/nicoletells"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn @nicoletells"
+        >
           <IconLinkedin />
         </a>
-        <a href="https://medium.com/@nicoletells" target="_blank" rel="noopener noreferrer" aria-label="Medium @nicoletells">
+        <a
+          href="https://medium.com/@nicoletells"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Medium @nicoletells"
+        >
           <IconMedium />
         </a>
       </SocialsWrapper>
@@ -154,19 +178,27 @@ const Footer = () => {
         </FlexColumn>
         <FlexColumn>
           <SubTitleP>Phone</SubTitleP>
-          <p><a href="tel:+46707193549">+46 (0) 70 - 719 35 49</a></p>
+          <p>
+            <a href="tel:+46707193549">+46 (0) 70 - 719 35 49</a>
+          </p>
         </FlexColumn>
         <FlexColumn>
           <SubTitleP>E-mail</SubTitleP>
-          <p><a href="mailto:hi@nicoletells.com">hi@nicoletells.com</a></p>
+          <p>
+            <a href="mailto:hi@nicoletells.com">hi@nicoletells.com</a>
+          </p>
         </FlexColumn>
         <FlexColumn>
           <SubTitleP>Org. Nr.</SubTitleP>
-          <p><InvisiA onClick={() => console.log("Click! :)")}>559174-7935</InvisiA></p>
+          <p>
+            <InvisiA onClick={() => console.log("Click! :)")}>
+              559174-7935
+            </InvisiA>
+          </p>
         </FlexColumn>
       </CopyContactInfoWrapper>
     </StyledFooter>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
