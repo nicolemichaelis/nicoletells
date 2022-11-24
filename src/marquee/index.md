@@ -14,4 +14,6 @@ marqueeImages:
   - ../images/marquee/logo_technigo.webp
   - ../images/marquee/logo_sleepcycle.webp
   - ../images/marquee/logo_vassla.webp
+  - ../images/marquee/einridelogo2020.png
+  - ../images/marquee/assa_abloy-logo.wine.png
 ---
