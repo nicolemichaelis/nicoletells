@@ -63,5 +63,13 @@ timeline:
     timelineTitle: Tempo Conference
     timelineType: Talk
     timelineBody: Taking care of your design team
+  - timelineDate: 2024-06-12T06:02:04.753Z
+    timelineTitle: Lead with Tempo Conference
+    timelineType: Talk
+    timelineBody: The future of content design is not what you think it is
+  - timelineDate: 2024-05-03T06:02:47.524Z
+    timelineTitle: Growing in Content Conference
+    timelineType: Talk
+    timelineBody: "Panel: Recovering from layoffs"
 ---
 I love giving talks and workshops! I've trained in facilitation and workshop design at Hyper Island. This is a selection of talks and workshops I’ve given. Contact me for a full list and more details on specific sessions.
