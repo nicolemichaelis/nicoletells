@@ -63,7 +63,7 @@ timeline:
     timelineTitle: Tempo Conference
     timelineType: Talk
     timelineBody: Taking care of your design team
-  - timelineDate: 2024-05-03T06:04:58.776Z
+  - timelineDate: 2023-05-16T06:04:58.776Z
     timelineTitle: Webbdagerna Stockholm
     timelineType: Talk
     timelineBody: Introduction to content design
@@ -71,7 +71,7 @@ timeline:
     timelineTitle: Lead with Tempo Conference
     timelineType: Talk
     timelineBody: The future of content design is not what you think it is
-  - timelineDate: 2024-05-03T06:02:47.524Z
+  - timelineDate: 2024-08-13T06:02:47.524Z
     timelineTitle: Growing in Content Conference
     timelineType: Talk
     timelineBody: "Panel: Recovering from layoffs"
